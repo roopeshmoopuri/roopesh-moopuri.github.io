@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1F252E;
+            color: #fff;
+            padding: 2rem;
+        }
+
+        header {
+            padding: 1.7rem 1rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: .97rem;
+            font-weight: 600;
+            letter-spacing: .7px;
+            padding: 1rem;
+            padding: 0.4rem 1rem;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #00E8F8;
+            border-radius: 1rem;
+            transition: all.3s ease-in-out;
+        }
+
+        #click {
+            display: none;
+        }
+
+        .menu i {
+            color: #00E8F8;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        section {
+            margin: 2rem auto;
+            max-width: 80%;
+        }
+
+        .resume {
+            line-height: 1.6;
+        }
+
+        .resume h1,
+        .resume h2 {
+            color: #00E8F8;
+            margin-bottom: 1rem;
+        }
+
+        .resume p {
+            margin-bottom: 1rem;
+        }
+
+        .resume ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .resume ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .resume .section-title {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            color: blueviolet;
+        }
+
+        @media only screen and (max-width:480px) {
+            .menu {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #244D61;
+            }
+
+            header {
+                padding: 0.7rem 1rem;
+                align-items: center;
+                max-width: 100%;
+            }
+
+            nav {
+                position: absolute;
+                display: grid;
+                top: 75px;
+                text-align: center;
+                background-color: #1F252E;
+                left: -100%;
+                z-index: 1;
+                width: 100%;
+            }
+
+            #click:checked~nav {
+                left: 0%;
+                transition: all 0.3s ease;
+            }
+
+            section {
+                margin: 1rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="logo">
+            <a href="index.html">Logo.</a>
+        </div> -->
+        <input type="checkbox" id="click">
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </label>
+        <nav>
+            <a href="P1.html" class="active">Home</a>
+            <a href="p1About.html">About</a>
+            <a href="p1Skills.html">Skills</a>
+            <a href="p1Resume.html">Resume</a>
+            <a href="p1Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="resume">
+
+            <h2>MOOPURI ROOPESH</h2>
+            <p><strong>Phone:</strong> 6301669536</p>
+            <p><strong>Email:</strong> <a href="mailto:roopeshmopuri123@gmail.com" style="color: #00E8F8;">roopeshmopuri123@gmail.com</a></p>
+
+            <div class="section-title">Career Objective:</div>
+            <p>To join a reputed company where I can get a platform to improve my skills and perform the best of my abilities and lay a path for my growth in the company.</p>
+
+            <div class="section-title">Educational Qualifications:</div>
+            <ul>
+                <li>MCA - Master of Computer Applications in Madanapalle Institute of Technology and Science, Angallu with 81% (2023).</li>
+                <li>B.Sc. Mathematics, Physics, Computer Science in Sri Vari Degree College, Peddamandyam with 88% (2021).</li>
+                <li>Intermediate - Mathematics, Physics, Chemistry in AP Model College Peddamandyam with 85% (2016).</li>
+                <li>SSC in AP Model School from SSC Board with 68% (2016).</li>
+            </ul>
+
+            <div class="section-title">Technical Skills:</div>
+            <ul>
+                <li>Programming Languages: Core Java, Python 3.7.8, OOPs</li>
+                <li>Designing Skills: HTML-CSS (Advanced), JavaScript</li>
+                <li>Databases: MySQL, Oracle SQL</li>
+                <li>Platforms: HackerRank, Code Chef</li>
+                <li>Frameworks: Spring, Hibernate</li>
+            </ul>
+
+            <div class="section-title">Academic Projects and Mini Projects:</div>
+            <ul>
+                <li><strong>Emotion Recognition Using Speech Processing:</strong> Natural and empathetic interaction between humans and computers by responding to the user's emotional state. Skills: Python, Pandas, Numpy, Librosa, TensorFlow.</li>
+                <li><strong>Todo Web Application:</strong> Activities List. Skills: J2EE, MySQL, JDBC.</li>
+                <li><strong>Shopping Cart Management System:</strong> Managing the items in a shop. Skills: Spring, Hibernate, J2EE.</li>
+            </ul>
+
+            <div class="section-title">Achievements & Awards:</div>
+            <ul>
+                <li>Completed Java course in Jspiders, Bangalore.</li>
+                <li>Problem-solving and Java basic certificates in HackerRank:
+                    <ul>
+                        <li><a href="https://www.hackerrank.com/certificates/e5b503b6ad21" style="color: #00E8F8;">Certificate 1</a></li>
+                        <li><a href="https://www.hackerrank.com/certificates/iframe/e5b503b6ad21" style="color: #00E8F8;">Certificate 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-title">Challenges:</div>
+            <ul>
+                <li>Can write any programming logic in Java.</li>
+                <li>Practiced on HackerEarth, HackerRank platforms.</li>
+            </ul>
+
+            <div class="section-title">Personal Profile:</div>
+            <ul>
+                <li><strong>Date of Birth:</strong> 21/01/2001</li>
+                <li><strong>Known Languages:</strong> Telugu, English (Hindi)</li>
+                <li><strong>Hobbies:</strong> Playing cricket, Video Editing, Listening to Music</li>
+                <li><strong>Marital Status:</strong> Single</li>
+            </ul>
+
+            <p><strong>Declaration:</strong> I hereby declare that the information furnished above is true to the best of my knowledge.</p>
+
+            <p>                                                                                                Moopuri Roopesh</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
